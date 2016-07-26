@@ -1,0 +1,15 @@
+[package]
+name = "embed"
+version = "0.1.0"
+authors = ["Mantas Matelis <me@mantasmatelis.com>"]
+
+description = "..."
+repository = "https://github.com/mantasmatelis/embed"
+
+readme = "README.md"
+
+keywords = ["macro", "encoding"]
+
+license = "MIT"
+
+[dependencies]
