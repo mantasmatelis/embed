@@ -1,15 +1,17 @@
 [package]
 name = "embed"
-version = "0.1.0"
+version = "0.1.1"
+
 authors = ["Mantas Matelis <me@mantasmatelis.com>"]
-
-description = "..."
 repository = "https://github.com/mantasmatelis/embed"
-
+description = "embed is a Rust compiler plugin that lets you embed directory trees into compiled binaries. This is useful in order to ship a single self-contained binary."
 readme = "README.md"
-
-keywords = ["macro", "encoding"]
-
+keywords = ["macro"]
 license = "MIT"
 
+[lib]
+crate-type = ["dylib"]
+plugin = true
+
 [dependencies]
+walkdir = "0.1"
